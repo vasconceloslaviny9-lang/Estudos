@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex005</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas (pictures)</h1>
+    <p>veja que a imagem se adapta ao tamanho do navegador.</p>
+
+    <picture>
+
+        <source media="(max-width: 200px)" srcset="imagens/bicicleta.png" type="image/png">
+        <source media="(max-width:500px )" srcset="imagens/carro.png" type="image/png">
+        <img src="imagens/caminhao.png" alt="A imagem grande">
+    </picture>
+
+
+    <p>Você está vendo um caminhão, um carro ou uma bicicleta?</p>
+
+    <p>Experimente aumentar e diminuir o tamanho do seu navegador &#x1F92F; </p>
+    <h1>Áudio</h1>
+
+    <h3>Ouça nossa música tema:</h3>
+<audio controls preload="metadata">
+<source src="midia/podcast.mp3" type="audio/mpeg">
+<source src="midia/podcast.mp3" type="audio/ogg">
+<p>Seu navegador não suporta áudio. <a href="midia/musica.mp3">Clique aqui para baixar o áudio</a>.</p>
+</audio>
+
+</body>
+</html>
