@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+   
+    
+    <title>ent006</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form action="cadastro.php" method="post">
+    <fieldset>
+        <legend>Informações pessoais</legend>
+        <div>
+            <p>
+                <label for="idnome">Nome completo:</label>
+                <input type="text" name="Nome completo" id="idnome" maxlength="20" size="20">
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <label for="idemail">E-mail:</label>
+                <input type="email" name="E-mail" id="idemail" maxlength="20" size="20">
+            </p>
+        </div>
+        
+        <div>
+            <p>
+                <label for="idsenha">Senha:</label>
+                <input type="password" name="Senha" id="idsenha" maxlength="20" size="20">
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <label for="iddata">Data de nascimento:</label>
+                <input type="date" name="Data de nascimento" id="iddata" maxlength="20" size="20">
+            </p>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Perfil</legend>
+        
+        <div>
+            <p>
+                <label for="idfot">Foto de perfil:</label>
+                <input type="file" id="idfot" name="foto">
+
+            </p>
+        </div>
+
+        <div>
+            <label for="idbio">Biografia</label>
+            <div>
+                <textarea  name="msg"  id="idmsg" cols="30"  rows="10" placeholder="Fale um pouco sobre você..."></textarea>
+            </div>
+        </div>
+
+        <div>
+            <p>
+                <label for="idint">Interesse:</label>
+            </p>
+
+                <input type="checkbox" name="Música" id="idmus">
+                <label for="idmus">Música</label>
+                
+                <input type="checkbox" name="Esportes" id="idesp">
+                <label for="idesp">Esportes</label>
+                
+                <input type="checkbox" name="Tecnologia" id="idtec">
+                <label for="idtec">Tecnologia</label>
+                
+                <input type="checkbox" name="Viagens" id="idvia">
+                <label for="idvia">Viagens</label>
+      
+        </div>
+    </fieldset>
+
+     <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+</body>
+</html>
