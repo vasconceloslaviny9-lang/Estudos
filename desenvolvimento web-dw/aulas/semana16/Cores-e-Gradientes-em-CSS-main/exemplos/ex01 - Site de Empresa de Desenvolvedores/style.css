@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* Paleta baseada nas cores fornecidas (XML) */
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #6A5A50; /* Cinza quente escuro (derivado do Teste-1) */
+    background: #F2E3B3;
+}
+
+a {
+    color: #F2BCB3; /* Teste-4 – destaque suave */
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #6A5A50;
+}
+
+h2 {
+    border-left: 4px solid #F2C6B3; /* Teste-1 */
+}
+
+em {
+    color: #F2C6B3;
+}
+
+main {
+    background-color: #fff;
+}
