@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+/*cor-fundo: #000000; Fundo principal (preto profundo) */
+
+/*cor escura: #2F2C1C; Tom terroso escuro - usado em cabeçalhos */
+
+/*cor secundaria: #A26F28; Dourado envelhecido - títulos menores */
+
+/*cor em destaque: #CFA657; Dourado brilhante - destaque principal */
+
+/*cor do texto: #B8A790; Bege claro - texto padrão */
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #000000;
+    color: #B8A790;
+}
+
+header{
+    background-color: #2F2C1C;
+}
+
+nav a {
+    color: #B8A790;
+}
+
+nav a:hover {
+    color: #CFA657;
+    }
+
+h1 {
+    color: #CFA657;
+}
+
+h2 {
+    color: #A26F28;
+}
+
+footer{
+    background-color: #2F2C1C;
+    color: #B8A790;
+}
+
+footer span {
+    color: #CFA657;
+}
