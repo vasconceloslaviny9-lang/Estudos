@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* Paleta baseada nas cores fornecidas (XML) */
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #4d3221;
+}
+
+a {
+    color:#E59850 ;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color:#E59850 ;
+}
+
+h2 {
+    border-left: 4px solid ;
+}
+
+em {
+    color:#F4B87A ;
+}
+
+main {
+    background-color:#fff ;
+}

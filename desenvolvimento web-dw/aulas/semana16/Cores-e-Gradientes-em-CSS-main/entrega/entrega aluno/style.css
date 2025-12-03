@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lobster&display=swap');
+
+body {
+    background-color: #038C7F;
+    color: #BFB19F;
+    font-family: 'Cormorant Garamond', serif; /* Nova fonte para o corpo */
+    font-size: 1.1em; /* Ajuste para melhor leitura */
+}
+
+header, footer {
+    background-color: #A2F2C5;
+}
+
+nav a {
+    color: #268C3F;
+}
+
+h1, h2 {
+    font-family: 'Lobster', cursive; /* Nova fonte estilosa para títulos */
+}
+
+/* Estilo para os botões de link no rodapé */
+.link-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.link-buttons a {
+    display: inline-block;
+    background-color: #268C3F;
+    color: #A2F2C5;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Cormorant Garamond', serif; /* Mantendo a fonte mais legível nos botões */
+    font-size: 1.1em;
+}
+
+.link-buttons a:hover {
+    background-color: #038C7F;
+    color: #A2F2C5;
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
