@@ -1,0 +1,25 @@
+body {
+    background: #f9f5f0; /* Fundo quente e arejado */
+    color: #5e4b3a;      /* Texto em terra escura */
+}
+
+h1, h2 {
+    color: #8b5e3c;      /* Títulos em "casca assada" */
+}
+
+em {
+    color: #663814;      /* Acento emocional: "crocância" */
+}
+
+main {
+    background: #fff;    /* Miolo branco da batata */
+}
+
+a {
+    color: #663814;      /* Links chamam à ação com crocância */
+}
+
+blockquote {
+    background: #fdf9f7; /* Fundo suave, como vapor do forno */
+    color: #8b5e3c;
+}
