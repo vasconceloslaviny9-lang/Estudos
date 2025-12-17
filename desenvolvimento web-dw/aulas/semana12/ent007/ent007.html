@@ -24,6 +24,8 @@
         <h1>Sintaxe</h1>
         <hr>
         <hr>
+        <img src="smile_face.png" alt="">
+
         <p>CSS tem uma sintaxe simples, e utiliza uma série de palavras em inglês para especificar os nomes de diferentes propriedade de estilo de uma página.</p>
 
         <p>Uma instrução CSS consiste em um <strong>seletor</strong> e um <strong>bloco de declaração.</strong> Cada declaração contém uma <strong>propriedade</strong> e um <strong>valor</strong>, separados por dois pontos (:). Cada declaração é separada por ponto e vírgula (;).<sup>[2]</sup></p>
@@ -38,15 +40,17 @@
 
         <p>Aqui está um exemplo que resume as regras acima:</p>
         <p>
-           <code>
+           <pre>
+               <code style="color: green;">
                
-                selector [, selector2, ...][:pseudo-class] { <br>
-                property: value;<br>
-                [property2: value2;<br>
-                ...]<br>
-                }<br>
-                /* comment *
-           </code>
+                    selector [, selector2, ...][:pseudo-class] { <br>
+                    property: value;<br>
+                    [property2: value2;<br>
+                    ...]<br>
+                    }<br>
+                    /* comment *
+               </code>
+           </pre>
         </p>
         </article>
         </article>
@@ -69,25 +73,29 @@
             </ul>
             <h2>Exemplo</h2>
 
-            <code>
-                p text-align: right; color: #BA2;<br>
-                p.minhaclasse01  color:#ABC; <br>
-                .minhaclasse02  color:#CAD; <br>
-                # iddomeuelemento  color:#ACD; <br>
-                p.minhaclasse03 .minhaclasse04 { color:#ACD; }
-            </code>
+            <pre>
+                <code style="color: green;">
+                    p text-align: right; color: #BA2;<br>
+                    p.minhaclasse01  color:#ABC; <br>
+                    .minhaclasse02  color:#CAD; <br>
+                    # iddomeuelemento  color:#ACD; <br>
+                    p.minhaclasse03 .minhaclasse04 { color:#ACD; }
+                </code>
+            </pre>
             <h1>Exemplos</h1>
             <hr>
             <hr>
-            <code>
-                /* comentário em css, semelhante aos da linguagem c */<br>
-                body <br>
-                { <br>
-                font-family: Arial, Verdana, sans-serif; <br>
-                background-color: #FFF; <br>
-                margin: 5px 10px;
-                }
-            </code>
+            <pre>
+                <code style="color: green;">
+                    /* comentário em css, semelhante aos da linguagem c */<br>
+                    body <br>
+                    { <br>
+                    font-family: Arial, Verdana, sans-serif; <br>
+                    background-color: #FFF; <br>
+                    margin: 5px 10px;
+                    }
+                </code>
+            </pre>
 
             <p>O código acima define fonte padrão Arial, caso não exista, substitui por Verdana, caso não exista, define qualquer fonte <ins>sans-serif</ins>. Define também a cor de fundo do corpo da página.</p>
 
@@ -125,6 +133,126 @@
                 </schedule>
     
     </code>
+    <p>O arquivo *.CSS que formata o XML anterior:</p>
+
+    <pre>
+        <code>
+                @media screen {
+            schedule {
+            display: block;
+            margin: 10px;
+            width: 300px;
+            }
+            date {
+            display: block;
+            padding: 0.3em;
+            font: bold x-large sans-serif;
+            color: white;
+            background-color: #C6C;
+            }
+            programme {
+            display: block;
+            font: normal medium sans-serif;
+            }
+            programme > * { /* All children of programme elements */
+            font-weight: bold;
+            font-size: large;
+            }
+            title {
+            font-style: italic;
+            }
+            }
+        </code>
+    </pre>
+    <h3>CSS e JavaScript</h3>
+    <p><strong>Pop-up não-bloqueável</strong></p>
+
+    <pre>
+        <code>
+            &gt;html&lt;
+            &gt;head&lt;
+            &gt;style type="text/css"&lt;
+            #popup position: absolute;
+            top: 30%;
+            left: 30%;
+            width: 300px;
+            height: 150px;
+            padding: 20px 20px 20px 20px;
+            border-width: 2px;
+            border-style: solid;
+            background: #ffffa0;
+            display: none;
+        
+            &gt;/style&lt;
+            &gt;script type="text/javascript"&lt;
+            function abrir() {
+            document.getElementById('popup').style.display = 'block';
+            setTimeout ("fechar()", 3000);
+            }
+            function fechar() {
+            document.getElementById('popup').style.display = 'none';
+            }
+            &gt;/script&lt;
+            &gt;/head&lt; &lt;br&lt;
+            &gt;body onload="abrir()" &lt;&gt;br&lt;
+            &gt;div id="popup" class="popup"&lt;&gt;br&lt;
+            Esse é um exemplo de popup utilizando o elemento&gt;code&lt;div&gt;/code&lt;. Dessa maneira esse &gt;br&lt;
+            pop-up não será bloqueado.&gt;br&lt;
+            &gt;small&lt; &gt;a href="javascript: fechar();"&lt;[X]&gt;/a&lt;&gt;/small&lt;&gt;br&lt;
+            &gt;/div&lt;&gt;br&lt;
+            &gt;a href="javascript: abrir();"&lt;Abrir pop-up&gt;/a&lt;&gt;br&lt;
+            &gt;a href="javascript: fechar();"&lt;Fechar pop-up</a><br>
+            &gt;/body&lt; &gt;br&lt;
+            &gt;/html&lt;&gt;br&lt;
+        </code>
+    </pre>
+    <h2>Padronização</h2>
+    <hr>
+    <hr>
+    <H3>Frameworks</H3>
+        Os frameworks CSS são bibliotecas pré-preparadas destinadas a permitir um estilo mais fácil e mais compatível com os padrões de páginas da web usando a linguagem Cascading Style Sheets. Os frameworks CSS incluem Blueprint, Bootstrap, Cascade <INS>Framework</INS>, Foundation e Materialize. Assim como as bibliotecas de <ins>linguagem de programação</ins> e script, os frameworks CSS São geralmente incorporados como planilhas .css externas referenciadas no HTML <head>. Eles fornecem uma série
+        de opções prontas para projetar e fazer o layout da página da web. Embora muitos desses frameworks tenham sido publicados, alguns autores os usam principalmente para prototipagem rápida, ou para aprender com, e preferem 'criar' CSS apropriado para cada site publicado sem a sobrecarga de design, manutenção e download de muitos recursos não utilizados no estilo do site<SUP>[4]</SUP>.
+
+        <h2>Metodologias de design</h2>
+        Conforme o tamanho dos recursos CSS usados em um projeto aumenta, uma equipe de desenvolvimento geralmente precisa decidir sobre uma metodologia de design comum para mantê los organizados. Os objetivos são facilidade de desenvolvimento, facilidade de colaboração durante o desenvolvimento e desempenho das folhas de estilo implementadas no navegador. As metodologias populares incluem OOCSS (CSS orientado a objeto), ACSS (CSS atômico), oCSS (folha de estilo em cascata orgânica), SMACSS (arquitetura escalável e modular para CSS) e BEM (bloco, elemento, modificador)<sup>[5]</sup>.
+
+        <h1>Ver também</h1>
+        <hr> 
+        <hr>
+        <ul type="square">
+            <li>Acid2</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>HTML5</li>
+            <li>Padrões web</li>
+            <li>Tableless</li>
+            <li>XHTML</li>
+
+        </ul>
+        <h1>Referências</h1>
+        <hr>
+        <ol>    
+        <li>«Cascading Style Sheets» (https://www.w3.org/Style/CSS/). www.w3.org (em inglês). Consultado em 8 de setembro de 2020</li>
+        <li>«W3C CSS2.1 specification for rule sets, declaration blocks
+        and selectors» (http://www.w3.org/TR/CSS21/syndata.html#q10). W3.org. Consultado em 8 de setembro de 2020</li>
+        <li> Ver a definição completa de seletores no website W3C (http://www.w3.org/TR/CSS21/selector.html).</li>
+        <li> Cederholm, Dan; Marcotte, Ethan (9 de abril de 2010). 
+        Handcrafted CSS: More Bulletproof Web Design (https://books.google.pl/books?id=UgrUeIwsS60C&pg=PA114&redir_esc=y#v=onepage&q&f=false) (em inglês). [S.l.]: New Riders</li>
+        <li>«OOCSS, ACSS, BEM, SMACSS: what are they? What should I use? – clubmate.fi» (https://web.archive.org/web/20150602231126/http://clubmate.fi/oocss-acss-bem-smacss-what-are-they what-should-i-use/). web.archive.org. 2 de junho de 2015.Consultado em 29 de março de 2021</li>
+
+        </ol>
+        <h1>Ligações externas</h1>
+        <hr>
+        <hr>
+        <ul type="square">
+            <li>«Página oficial» (https://www.w3.org/Style/CSS/) (em inglês)</li>
+            <li>«W3C CSS Specification» (https://www.w3.org/TR/CSS/) (em inglês)</li>
+            <li>«Serviço de validação de CSS do W3C» (https://jigsaw.w3.org/css-validator/)</li>
+            <li>«Aprenda a estilizar HTML utilizando CSS» (https://developer.mozilla.org/pt-BR/docs/Learn/CSS). Guia na MDN Web Docs</li></li>
+
+        </ul>
+        <hr>
+        <p>Obtida de "https://pt.wikipedia.org/w/index.php?title=Cascading_Style_Sheets&oldid=70327923"</p>
 
 
 
@@ -132,26 +260,13 @@
 
 
 
-            </p>
+
+</p>
    </programme>
  </schedule>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
    
 </main>
-
 
     
 </body>
