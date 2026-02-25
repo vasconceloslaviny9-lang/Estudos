@@ -167,6 +167,7 @@
     <h3>CSS e JavaScript</h3>
     <p><strong>Pop-up não-bloqueável</strong></p>
 
+<<<<<<< HEAD
     <code>
         &gt;html&lt;
 
@@ -208,6 +209,47 @@
         &gt;/html><br>
 
     </code>
+=======
+    <pre>
+        <code>
+            &gt;html&lt;
+            &gt;head&lt;
+            &gt;style type="text/css"&lt;
+            #popup position: absolute;
+            top: 30%;
+            left: 30%;
+            width: 300px;
+            height: 150px;
+            padding: 20px 20px 20px 20px;
+            border-width: 2px;
+            border-style: solid;
+            background: #ffffa0;
+            display: none;
+        
+            &gt;/style&lt;
+            &gt;script type="text/javascript"&lt;
+            function abrir() {
+            document.getElementById('popup').style.display = 'block';
+            setTimeout ("fechar()", 3000);
+            }
+            function fechar() {
+            document.getElementById('popup').style.display = 'none';
+            }
+            &gt;/script&lt;
+            &gt;/head&lt; &lt;br&lt;
+            &gt;body onload="abrir()" &lt;&gt;br&lt;
+            &gt;div id="popup" class="popup"&lt;&gt;br&lt;
+            Esse é um exemplo de popup utilizando o elemento&gt;code&lt;div&gt;/code&lt;. Dessa maneira esse &gt;br&lt;
+            pop-up não será bloqueado.&gt;br&lt;
+            &gt;small&lt; &gt;a href="javascript: fechar();"&lt;[X]&gt;/a&lt;&gt;/small&lt;&gt;br&lt;
+            &gt;/div&lt;&gt;br&lt;
+            &gt;a href="javascript: abrir();"&lt;Abrir pop-up&gt;/a&lt;&gt;br&lt;
+            &gt;a href="javascript: fechar();"&lt;Fechar pop-up</a><br>
+            &gt;/body&lt; &gt;br&lt;
+            &gt;/html&lt;&gt;br&lt;
+        </code>
+    </pre>
+>>>>>>> 3bdc3b6086184ee94d5fbc55e5aa8f8f16fb6d90
     <h2>Padronização</h2>
     <hr>
     <hr>
