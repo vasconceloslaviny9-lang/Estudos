@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>2º lista de Exercícios</title>
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <main class="container">
+        <section class="int-html">
+            <fieldset>
+                <legend>Interação com HTML</legend>
+                <button onclick="ex001()" class="button">exercicio01</button>
+                <button onclick="ex002()" class="button">exercicio02</button>
+                <button onclick="ex003()" class="button">exercicio03</button>
+                <button onclick="ex004()" class="button">exercicio04</button>
+                <button onclick="ex005()" class="button">exercicio05</button>
+
+            </fieldset>
+        </section>
+
+        <section class="funcoes">
+            <fieldset>
+                <legend>Funções</legend>
+                <button onclick="ex006()" class="button">exercicio06</button>
+                <div>
+                    <fieldset>
+                        <legend>Exercicio07</legend>
+                        <input type="text" id="inputEx07" placeholder="Nome" />
+                        <button onclick="ex007()" class="button">exercicio 07</button>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Exercicio 8</legend>
+                        <input type="number" id="inputEx008" placeholder="Digite um número" />
+                        <p id="resultadoEx008">Resultado</p>
+                        <button onclick="ex008()" class="button">exercicio 08</button>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Exercicio 9</legend>
+                        <input type="number" id="inputEx009" placeholder="Digite um número" />
+                        <input type="number" id="inputEx009" placeholder="Digite um número" />
+                        <input type="number" id="inputEx009" placeholder="Digite um número" />
+                        <p id="resultadoEx009" class="resultadoMesmaLinha">Resultado</p>
+                        <button onclick="ex009()" class="button">exercicio 09</button>
+                    </fieldset>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Exercicio 10</legend>
+                <input type="number" id="inputNumero4" placeholder="Digite um número" />
+                <input type="number" id="inputNumero5" placeholder="Digite um número" />
+                <p id="resultadoEx010" class="resultadoMesmaLinha">Resultado</p>
+                <button onclick="ex010()" class="button">exercicio 10</button>
+            </fieldset>
+            </div>
+            </fieldset>
+        </section>
+        <section>
+            <div>
+                <fieldset>
+                    <legend>Exercicio 11</legend>
+                    <input type="number" id="inputEx011" placeholder="Digite um número" />
+                    <p id="resultadoEx011">Resultado</p>
+                    <button onclick="ex011()" class="button">exercicio 11</button>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Exercicio 12</legend>
+                    <input type="number" id="inputEx012" placeholder="Digite seu peso" />
+                    <input type="number" id="inputEx0012" placeholder="Digite sua altura" />
+                    <p id="resultadoEx012" class="resultadoMesmaLinha">Resultado</p>
+                    <button onclick="ex012()" class="button">exercicio 12</button>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Exercicio13</legend>
+                    <input type="number" id="inputEx013" placeholder="Digite um número" />
+                    <p id="resultadoEx013">Resultado</p>
+                    <button onclick="ex013()" class="button">exercicio13</button>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Exercicio14</legend>
+                    <input type="number" id="inputEx014" placeholder="Digite o valor: " />
+                    <p id="resultadoEx014">Resultado</p>
+                    <button onclick="ex014()" class="button">exercicio14</button>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Exercicio15</legend>
+                    <input type="number" id="input15"    placeholder="Digite a altura: " />
+                     <input type="number" id="input16" placeholder="Digite a largura: " />
+                    <p id="resultado1">Resultado area </p>
+                    <p id="resultado2">Resultado perimetro </p>
+                    <button onclick="ex015()" class="button">exercicio15</button>
+                </fieldset>
+            </div>
+
+               <div>
+                <fieldset>
+                    <legend>Exercicio16</legend>
+                    <input type="number" id="input16"    placeholder="Digite o raio: " />
+                     <input type="number" id="input17" placeholder="Digite a largura: " />
+                    <p id="resultado1">Resultado area </p>
+                    <p id="resultado2">Resultado perimetro </p>
+                    <button onclick="ex015()" class="button">exercicio16</button>
+                </fieldset>
+            </div>
+
+
+
+            <section id="arrays-e-dom">
+                </fieldset>
+                <fieldset>
+                    <legend>Arrays em Funções</legend>
+                </fieldset>
+
+            </section>
+            <fieldset>
+                <legend>Seção 4: Arrays e Manipulação do DOM</legend>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>24. Contador de Palavras</legend>
+                        <input type="text" id="palavra-ex24" placeholder="Digite uma palavra">
+                        <button id="btn-add-ex24">Adicionar</button>
+                        <button id="btn-reiniciar-ex24">Reiniciar</button>
+                        <br><br>
+                        Palavras salvas: <span id="contador-ex24">0</span>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>25. Extrator de Primeiro Nome</legend>
+                        <input type="text" id="nome-completo-ex25" placeholder="Digite o nome completo">
+                        <button id="btn-extrair-ex25">Extrair</button>
+                        <br><br>
+                        Primeiro nome: <strong id="resultado-ex25"></strong>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>26. Calculadora de Despesas</legend>
+                        <input type="text" id="produto-ex26" placeholder="Nome do Produto">
+                        <input type="number" id="preco-ex26" placeholder="Preço (R$)">
+                        <button id="btn-add-ex26">Adicionar</button>
+                        <button id="btn-reiniciar-ex26">Reiniciar</button>
+                        <h4>Lista de Produtos:</h4>
+                        <ul id="lista-produtos-ex26"></ul>
+                        <h2 id="total-ex26">Total: R$ 0.00</h2>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>27. Gerador de Lista de Convidados</legend>
+                        <input type="text" id="nome-ex27" placeholder="Nome do convidado">
+                        <button id="btn-add-ex27">Adicionar</button>
+                        <button id="btn-reiniciar-ex27">Reiniciar</button>
+                        <br><br>
+                        <div id="resultado-texto-ex27"></div>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>28. Criador de Lista de Tarefas</legend>
+                        <input type="text" id="tarefa-ex28" placeholder="Digite uma tarefa">
+                        <button id="btn-add-ex28">Adicionar</button>
+                        <button id="btn-reiniciar-ex28">Reiniciar</button>
+                        <h4>Minhas Tarefas:</h4>
+                        <ul id="lista-tarefas-ex28"></ul>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>29. Embaralhador de Itens</legend>
+                        <input type="text" id="item-ex29" placeholder="Digite um item">
+                        <button id="btn-cadastrar-ex29">Cadastrar</button>
+                        <button id="btn-embaralhar-ex29">Embaralhar</button>
+                        <button id="btn-reiniciar-ex29">Reiniciar</button>
+                        <br><br>
+                        <strong>Array Atual:</strong>
+                        <div id="exibicao-array-ex29"></div>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>30. Sistema de Busca de Contatos</legend>
+                        <input type="text" id="cadastro-nome-ex30" placeholder="Cadastrar Nome">
+                        <button id="btn-cadastrar-ex30">Cadastrar</button>
+                        <br><br>
+                        <input type="text" id="busca-nome-ex30" placeholder="Buscar Nome">
+                        <button id="btn-buscar-ex30">Buscar</button>
+                        <br><br>
+                        <button id="btn-reiniciar-ex30">Reiniciar Sistema</button>
+                        <h4>Lista de Contatos:</h4>
+                        <ul id="lista-contatos-ex30"></ul>
+                        <span id="mensagem-ex30"></span>
+                    </fieldset>
+                </div>
+            </fieldset>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
